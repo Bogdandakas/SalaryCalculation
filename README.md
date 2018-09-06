@@ -1,2 +1,2 @@
-# baigiamasis
-Baigiamųjų darbu GIT repozitorija
+# SalaryCalculation
+Calculation.
