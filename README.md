@@ -1,2 +1,3 @@
 # SalaryCalculation
-Calculation.
+
+Calculation. Local or remote mysql DB.
