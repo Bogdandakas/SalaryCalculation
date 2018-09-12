@@ -49,29 +49,6 @@ public class Period {
     public Period() {
     }
 
-    public Period(String id) {
-        this.id = id;
-        setWorkDays(21);
-        setWorkHours(168);
-        setMin(400);
-        setHourlyMin(4.25);
-        setMoreTimeCoefficient(1.5);
-        setRedDayCoefficient(2);
-        setTaxFree(380);
-        setCoefficient(0.5);
-        setBase(400);
-        setPercent(15);
-        setPnpd(0);
-        setHealthEmployee(3);
-        setHealthNewEmployee(3);
-        setHealthEmployer(3);
-        setSocialEmployee(6);
-        setSocialEmployer(27.98);
-        setGuaranteeFund(2);
-        setSickPayDay(2);
-        setSickPayCoefficient(0.8);
-    }
-
     public String getId() {
         return id;
     }

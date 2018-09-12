@@ -3,7 +3,7 @@ package com.vcs.bogdan.service.db;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class UserService {
+public class AppService {
 
     public void start() {
         ConnectionServiceImpl dbConnection = new ConnectionServiceImpl();

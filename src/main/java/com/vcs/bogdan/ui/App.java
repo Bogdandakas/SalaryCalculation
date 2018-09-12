@@ -26,7 +26,7 @@ public class App {
 
     private static void app() {
         logger.log(Level.INFO, START_APP);
-        UserService service = new UserService();
+        AppService service = new AppService();
         service.start();
 
         run();
@@ -84,7 +84,7 @@ public class App {
         }
     }
 
-    public static void loggPerson(List<Person> persons) {
+    private static void loggPerson(List<Person> persons) {
         for (Person p : persons) {
             logger.log(Level.INFO, PERIOD + p.getId() + SPACE + p.getName() + SPACE + p.getSurname());
         }

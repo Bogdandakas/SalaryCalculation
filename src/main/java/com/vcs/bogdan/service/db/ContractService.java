@@ -3,7 +3,7 @@ package com.vcs.bogdan.service.db;
 import com.mysql.jdbc.StringUtils;
 import com.vcs.bogdan.beans.Contract;
 import com.vcs.bogdan.beans.LogHandler;
-import com.vcs.bogdan.service.ContractCoparator;
+import com.vcs.bogdan.service.ContractComparator;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -104,7 +104,7 @@ public class ContractService implements DBService<Contract> {
         Contract result = new Contract();
 
         List<Contract> contracts = new ContractService().getAll();
-        contracts.sort(new ContractCoparator());
+        contracts.sort(new ContractComparator());
 
         for (Contract contract : contracts) {
             boolean isInclusiveDate = contract.getDate() / NUMBER <= Integer.valueOf(periodId);

@@ -3,9 +3,6 @@ package com.vcs.bogdan.beans;
 import com.vcs.bogdan.beans.enums.CalcType;
 import com.vcs.bogdan.beans.enums.ContractEvent;
 
-import static com.vcs.bogdan.beans.enums.CalcType.*;
-import static com.vcs.bogdan.beans.enums.ContractEvent.*;
-
 public class Contract {
 
     public static final String CONTRACT = "Contract: ";
@@ -29,16 +26,6 @@ public class Contract {
     private boolean isMain;
 
     public Contract() {
-    }
-
-    public Contract(String personId) {
-        setPersonId(personId);
-        setDate(20180101);
-        setEvent(UPDATE);
-        setType(HOUR);
-        setDayHours(8);
-        setWage(8.4);
-        setMain(true);
     }
 
     public String getId() {

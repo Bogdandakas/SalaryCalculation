@@ -17,31 +17,30 @@ public class TestService {
         return "{\"msg\" : \"I'm alive!!!\"}";
     }
 
-        @Value("${appName}")
-        private String name;
+    @Value("${appName}")
+    private String name;
 
-        @RequestMapping(value = "/{text}", method = RequestMethod.GET)
-        public String webExample(@PathVariable("text") String textFromRequest, HttpServletRequest request) {
-            return webExampleHtml(textFromRequest, request.getRemoteAddr());
-        }
-
-        @RequestMapping(value = "/", method = RequestMethod.GET)
-        public String webExampleEmpty(HttpServletRequest request) {
-            return webExampleHtml(null, request.getRemoteAddr());
-        }
-
-        public String webExampleHtml(String textFromRequest, String host) {
-
-            String result = (null != textFromRequest && !textFromRequest.isEmpty() ? textFromRequest : "anonime");
-
-            return "<!DOCTYPE html><html><body><h1>Tavo IP : " + host + "</h1>" + "<p>Sveikas <b>" + result
-                    + "</b></p></body></html>";
-        }
-
-        @RequestMapping(method = RequestMethod.POST)
-        public String dssadasdfdsfdsf() {
-
-            return "Nesvarbu: " + name;
-        }
-
+    @RequestMapping(value = "/{text}", method = RequestMethod.GET)
+    public String webExample(@PathVariable("text") String textFromRequest, HttpServletRequest request) {
+        return webExampleHtml(textFromRequest, request.getRemoteAddr());
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String webExampleEmpty(HttpServletRequest request) {
+        return webExampleHtml(null, request.getRemoteAddr());
+    }
+
+    public String webExampleHtml(String textFromRequest, String host) {
+
+        String result = (null != textFromRequest && !textFromRequest.isEmpty() ? textFromRequest : "anonime");
+
+        return "<!DOCTYPE html><html><body><h1>Tavo IP : " + host + "</h1>" + "<p>Sveikas <b>" + result
+                + "</b></p></body></html>";
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String dss() {
+        return "Nesvarbu: " + name;
+    }
+
+}

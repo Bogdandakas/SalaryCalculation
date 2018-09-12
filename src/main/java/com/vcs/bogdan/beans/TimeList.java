@@ -2,8 +2,6 @@ package com.vcs.bogdan.beans;
 
 import com.vcs.bogdan.beans.enums.WorkEvent;
 
-import static com.vcs.bogdan.beans.enums.WorkEvent.*;
-
 public class TimeList {
 
     public static final String TIME_LIST = "Time list: ";
@@ -28,14 +26,6 @@ public class TimeList {
         this.personId = personId;
         this.event = event;
         this.value = value;
-    }
-
-    public TimeList(String id) {
-        this.id = id;
-        setDate(20180107);
-        setPersonId("111");
-        setEvent(H.toString());
-        setValue(6);
     }
 
     public String getId() {
