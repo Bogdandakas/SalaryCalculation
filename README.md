@@ -1,2 +1,3 @@
-# baigiamasis
-Baigiamųjų darbu GIT repozitorija
+# SalaryCalculation
+
+Calculation. Local or remote MySQL DB.
